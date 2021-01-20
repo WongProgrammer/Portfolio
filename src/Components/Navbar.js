@@ -1,23 +1,26 @@
 import React, { Component } from 'react'
-import { Button, IconButton, ListItemText, ListItem, List, Divider, Drawer } from '@material-ui/core';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import Resume from '../Pages/Resume/Resume';
+import { Button, IconButton, ListItem, List, Divider, Drawer } from '@material-ui/core';
+import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
+import Education from '../Pages/Education/Education';
+import Experience from '../Pages/Experience/Experience';
+import Projects from '../Pages/Projects/Projects';
+import Interest from '../Pages/Interest/Interest';
 import Home from '../Pages/Home/Home';
-import FNIcon from '../FNIcon.png';
 import { withStyles } from '@material-ui/core/styles';
 import profilepic from './profilepic.jpg';
 
+//Modify the css of material ui components
 const style = theme => ({
     paper: {
         width: 200,
         "text-align": "center",
-        "justify-content" : "center",
+        "justify-content": "center",
         "align-items": "center",
-        "background-color" : "#52BE80"
+        "background-color": "#63F092"
     },
     root: {
         "text-align": "center",
-        "justify-content" : "center"
+        "justify-content": "center"
     }
 });
 
@@ -34,6 +37,16 @@ class Navbar extends Component {
             "border-radius": "50%"
         };
 
+        const mainStyle = {
+            "margin-left": 200
+        };
+
+        const navLinkStyle = {
+            color : "#424140",
+            textDecoration: 'none', 
+            "font-weight" : "bold",
+            "font-size" : "125%"
+        }
 
         const { classes } = this.props;
 
@@ -47,56 +60,79 @@ class Navbar extends Component {
                     >
                         <Divider />
                         <List>
-                            <ListItem button>
-                                <Link to="/" style={{ textDecoration: 'none' }}>
+                            <ListItem>
+                                <NavLink to="/" style={{ textDecoration: 'none' }}>
                                     <IconButton aria-label="home">
                                         <img src={profilepic} style={mystyle} alt="Francis Nguyen Icon" />
                                     </IconButton>
-                                </Link>
-                            </ListItem>
-                            
-                            <ListItem button classes={{ root : classes.root }}>
-                                <Link to="/Resume" style={{ textDecoration: 'none' }}>
-                                    Resume
-                                </Link>
+                                </NavLink>
                             </ListItem>
 
-                            <ListItem button classes={{ root : classes.root }}>
-                                <Link to="/Experience" style={{ textDecoration: 'none' }}>
-                                    Experience
-                                </Link>
-                            </ListItem>
-                    
-                            <ListItem button classes={{ root : classes.root }}>
-                                <Link to="/Volunteer">
-                                    Volunteer
-                                </Link>
+                            <ListItem classes={{ root: classes.root }}>
+                                <Button>
+                                    <NavLink to="/Education" style={navLinkStyle}>
+                                        Education
+                                    </NavLink>
+                                </Button>
                             </ListItem>
 
-                            <ListItem button classes={{ root : classes.root }}>
-                                <Link to="/Interest">
-                                    Interest
-                                </Link>
+                            <ListItem classes={{ root: classes.root }}>
+                                <Button>
+                                    <NavLink to="/Experience" style={navLinkStyle}>
+                                        Experience
+                                    </NavLink>
+                                </Button>
                             </ListItem>
 
-                            <ListItem button classes={{ root : classes.root }}>
-                                <Link to="/Contact">
-                                    Contact
-                                </Link>
+                            <ListItem classes={{ root: classes.root }}>
+                                <Button>
+                                    <NavLink to="/Projects" style={navLinkStyle}>
+                                        Projects
+                                    </NavLink>
+                                </Button>
+                            </ListItem>
+
+                            <ListItem classes={{ root: classes.root }}>
+                                <Button>
+                                    <NavLink to="/Interest" style={navLinkStyle}>
+                                        Interest
+                                    </NavLink>
+                                </Button>
                             </ListItem>
                         </List>
                     </Drawer>
 
                     <Switch>
                         <Route exact path="/">
-                            <main>
+                            <div style={mainStyle}>
                                 <Home />
-                            </main>
+                            </div>
+                        </Route>
 
+                        <Route exact path="/Education">
+                            <div style={mainStyle}>
+                                <Education />
+                            </div>
                         </Route>
-                        <Route exact path="/Resume">
-                            <Resume />
+
+                        <Route exact path="/Experience">
+                            <div style={mainStyle}>
+                                <Experience />
+                            </div>
                         </Route>
+
+                        <Route exact path="/Projects">
+                            <div style={mainStyle}>
+                                <Projects />
+                            </div>
+                        </Route>
+
+                        <Route exact path="/Interest">
+                            <div style={mainStyle}>
+                                <Interest />
+                            </div>
+                        </Route>
+
                     </Switch>
                 </Router>
             </div>
