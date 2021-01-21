@@ -16,7 +16,8 @@ const style = theme => ({
         "text-align": "center",
         "justify-content": "center",
         "align-items": "center",
-        "background-color": "#63F092"
+        "background-color": "#63F092",
+        overflowX : "hidden"
     },
     root: {
         "text-align": "center",
