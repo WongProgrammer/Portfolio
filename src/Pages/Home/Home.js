@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { GitHub, LinkedIn, Mail } from '@material-ui/icons';
 import PersonPinIcon from '@material-ui/icons/PersonPin';
-import { SvgIcon, Grid, Typography, Link } from '@material-ui/core';
+import { SvgIcon, Grid, Typography, Link, Box } from '@material-ui/core';
 class Home extends Component {
     // constructor(props) {
     //     super(props);
@@ -9,21 +9,21 @@ class Home extends Component {
     render() {
         const nameStyle = {
             color: "#424140",
-            fontSize: "100px"
+            fontSize: "90px",
         };
 
         const iconStyle = {
             color: "#D6D4D4",
-            fontSize: "50px"
+            fontSize: "55px"
         }
         return (
-            <div>
+            <div>       
                 <Grid
                     container
                     direction="column"
                     justify="center"
                     alignItems="center"
-                    style={{ minHeight: '100vh' }}
+                    style={{ minHeight: '95vh' }}
                 >
                     <Grid item>
                         <Typography style={nameStyle}>
@@ -36,30 +36,24 @@ class Home extends Component {
                         alignItems="center"
                         justify="center"
                         direction="row"
-                        style={{marginBottom : 10}}
+                        style={{ marginBottom: 10 }}
                     >
                         <Grid item>
-                            <SvgIcon>
+                            <SvgIcon style={{fontSize : 35}}>
                                 <PersonPinIcon></PersonPinIcon>
                             </SvgIcon>
                         </Grid>
                         <Grid item>
-                            <Typography style={{ fontSize: 20 }}>
-                                Westminster, CA
-                           </Typography>
+                            <Typography style={{ fontSize: 25 }}> Westminster, CA </Typography>
                         </Grid>
                     </Grid>
 
                     <Grid item>
-
-                        <Typography
-                            align="center"
-                            paragraph
-                            style={{ marginLeft: "5em", marginRight: "5em" }}
-                        >
-                            I am an alum from California State University, Los Angeles with a Bachelors Degree in Computer Science. During my years in college I have accumulated a wealth of experience with providing customer and team collaboration from working part-time at Los Angeles City Hall, team projects, and extracurriculars. During my free time and course work. I have gained experience in using a variety of languages like: Java, JavaScript, Python, and related Frameworks such as ReactJS and React Native. My dream is to be able to build amazing and fun applications for people to enjoy!
+                            <Typography
+                                style={{ marginLeft: "5em", marginRight: "5em", marginBottom: "1.5em", fontSize: 22 }}
+                            >
+                                I am an alum from California State University, Los Angeles with a Bachelors Degree in Computer Science. During my years in college I have accumulated a wealth of experience with providing customer and team collaboration from working part-time at Los Angeles City Hall, team projects, clubs, and campus organizations. During my free time and course work. I have gained experience in using a variety of languages like: Java, JavaScript, Python, and related Frameworks such as ReactJS and React Native. My dream is to be able to build amazing and fun applications for people to enjoy!
                         </Typography>
-
                     </Grid>
 
                     <Grid
