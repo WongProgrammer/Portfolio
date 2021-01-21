@@ -3,9 +3,7 @@ import { GitHub, LinkedIn, Mail } from '@material-ui/icons';
 import PersonPinIcon from '@material-ui/icons/PersonPin';
 import { SvgIcon, Grid, Typography, Link, Box } from '@material-ui/core';
 class Home extends Component {
-    // constructor(props) {
-    //     super(props);
-    // }
+
     render() {
         const nameStyle = {
             color: "#424140",
