@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { GitHub, LinkedIn, Mail } from '@material-ui/icons';
 import PersonPinIcon from '@material-ui/icons/PersonPin';
-import { SvgIcon, Grid, Typography, Link, Box } from '@material-ui/core';
+import { IconButton, SvgIcon, Grid, Typography, Link, Box } from '@material-ui/core';
 class Home extends Component {
 
     render() {
@@ -15,7 +15,7 @@ class Home extends Component {
             fontSize: "55px"
         }
         return (
-            <div>       
+            <div>
                 <Grid
                     container
                     direction="column"
@@ -37,7 +37,7 @@ class Home extends Component {
                         style={{ marginBottom: 10 }}
                     >
                         <Grid item>
-                            <SvgIcon style={{fontSize : 35}}>
+                            <SvgIcon style={{ fontSize: 35 }}>
                                 <PersonPinIcon></PersonPinIcon>
                             </SvgIcon>
                         </Grid>
@@ -47,10 +47,10 @@ class Home extends Component {
                     </Grid>
 
                     <Grid item>
-                            <Typography
-                                style={{ marginLeft: "5em", marginRight: "5em", marginBottom: "1.5em", fontSize: 22 }}
-                            >
-                                I am an alum from California State University, Los Angeles with a Bachelors Degree in Computer Science. During my years in college I have accumulated a wealth of experience with providing customer and team collaboration from working part-time at Los Angeles City Hall, team projects, clubs, and campus organizations. During my free time and course work. I have gained experience in using a variety of languages like: Java, JavaScript, Python, and related Frameworks such as ReactJS and React Native. My dream is to be able to build amazing and fun applications for people to enjoy!
+                        <Typography
+                            style={{ marginLeft: "5em", marginRight: "5em", marginBottom: "1.5em", fontSize: 22 }}
+                        >
+                            I am an alum from California State University, Los Angeles with a Bachelors Degree in Computer Science. During my years in college I have accumulated a wealth of experience with providing customer and team collaboration from working part-time at Los Angeles City Hall, team projects, clubs, and campus organizations. During my free time and course work. I have gained experience in using a variety of languages like: Java, JavaScript, Python, and related Frameworks such as ReactJS and React Native. My dream is to be able to build amazing and fun applications for people to enjoy!
                         </Typography>
                     </Grid>
 
@@ -65,9 +65,11 @@ class Home extends Component {
                                 href="mailto:francisnguyen2344@gmail.com"
                                 target="_blank"
                             >
-                                <SvgIcon style={iconStyle}>
-                                    <Mail></Mail>
-                                </SvgIcon>
+                                <IconButton>
+                                    <SvgIcon style={iconStyle}>
+                                        <Mail></Mail>
+                                    </SvgIcon>
+                                </IconButton>
                             </Link>
                         </Grid>
 
@@ -76,9 +78,11 @@ class Home extends Component {
                                 href="https://www.linkedin.com/in/huy-francis-nguyen-620b7a15a"
                                 target="_blank"
                             >
-                                <SvgIcon style={iconStyle}>
-                                    <LinkedIn></LinkedIn>
-                                </SvgIcon>
+                                <IconButton>
+                                    <SvgIcon style={iconStyle}>
+                                        <LinkedIn></LinkedIn>
+                                    </SvgIcon>
+                                </IconButton>
                             </Link>
                         </Grid>
 
@@ -87,9 +91,11 @@ class Home extends Component {
                                 href="https://github.com/WongProgrammer"
                                 target="_blank"
                             >
-                                <SvgIcon style={iconStyle}>
-                                    <GitHub></GitHub>
-                                </SvgIcon>
+                                <IconButton>
+                                    <SvgIcon style={iconStyle}>
+                                        <GitHub></GitHub>
+                                    </SvgIcon>
+                                </IconButton>
                             </Link>
                         </Grid>
                     </Grid>
