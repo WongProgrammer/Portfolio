@@ -1,0 +1,96 @@
+{
+    "courses": [
+        {
+            "name": "CS 101",
+            "title": "Intro to Higher ED ComputerScience"
+        },
+        {
+            "name": "CS 120",
+            "title": "Intro to Website Development"
+        },
+        {
+            "name": "CS 122",
+            "title": "Relational Databases andW SQL"
+        },
+        {
+            "name": "CS 2011",
+            "title": "Intro to Java I"
+        },
+        {
+            "name": "CS 2012",
+            "title": "Intro to Java II"
+        },
+        {
+            "name": "CS 2013",
+            "title": "Programming with Data Structures"
+        },
+        {
+            "name": "CS 3220",
+            "title": "Web and Internet Programming"
+        },
+        {
+            "name": "CS 4440",
+            "title": "Operating Systems"
+        },
+        {
+            "name": "CS 2146",
+            "title": "Discrtete Structures"
+        },
+        {
+            "name": "CS 3337",
+            "title": "Software Engineering"
+        },
+        {
+            "name": "CS 3035",
+            "title": "Programming Language Paradigms"
+        },
+        {
+            "name": "CS 3112",
+            "title": "Analysis of Algorithms"
+        },
+        {
+            "name": "CS 3186",
+            "title": "Intro to Automata"
+        },
+        {
+            "name": "CS 3801",
+            "title": "Societal and Ethical Issues"
+        },
+        {
+            "name": "CS 4222",
+            "title": "Principles of Database Systems"
+        },
+        {
+            "name": "CS 4075",
+            "title": "Concurrent and Distributed Programming"
+        },
+        {
+            "name": "CS 4780",
+            "title": "Cryptography and Info Security"
+        },
+        {
+            "name": "CS 3445",
+            "title": "Computer Organization and Architecture"
+        },
+        {
+            "name": "CS 4112",
+            "title": "Competetive Programming"
+        },
+        {
+            "name": "CS 4771",
+            "title": "Computer Networks Configuration and Management"
+        },
+        {
+            "name": "CS 4961",
+            "title": "Software Design Laboratory I"
+        },
+        {
+            "name": "CS 4962",
+            "title": "Software Design Laboratory II"
+        },
+        {
+            "name": "CS 4963",
+            "title": "Software Design Laboratory III"
+        }
+    ]
+}
