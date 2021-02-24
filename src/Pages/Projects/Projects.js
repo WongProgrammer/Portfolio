@@ -35,6 +35,7 @@ export default class Projects extends Component {
                     let result = [];
                     for(const [key, value] of Object.entries(res.data)) {
                         result.push(key);
+                        console.log(key);
                     }
                     return result;
                 })
