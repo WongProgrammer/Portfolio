@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/static/js/main.f6217a99.chunk.js",
-    "main.js.map": "/static/js/main.f6217a99.chunk.js.map",
+    "main.js": "/static/js/main.e66fdacc.chunk.js",
+    "main.js.map": "/static/js/main.e66fdacc.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.48f86b90.js",
     "runtime-main.js.map": "/static/js/runtime-main.48f86b90.js.map",
     "static/js/2.51856122.chunk.js": "/static/js/2.51856122.chunk.js",
@@ -16,12 +16,12 @@
     "static/media/city.b8b1abbc.png": "/static/media/city.b8b1abbc.png",
     "static/media/county.7f75c422.png": "/static/media/county.7f75c422.png",
     "static/media/csula.365df079.png": "/static/media/csula.365df079.png",
-    "static/media/profilepic.b361a725.jpg": "/static/media/profilepic.b361a725.jpg"
+    "static/media/profilepic.62b77d93.jpg": "/static/media/profilepic.62b77d93.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.48f86b90.js",
     "static/js/2.51856122.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.f6217a99.chunk.js"
+    "static/js/main.e66fdacc.chunk.js"
   ]
 }
