@@ -93,13 +93,13 @@ class Navbar extends Component {
                                 </Button>
                             </ListItem>
 
-                            <ListItem classes={{ root: classes.root }}>
+                            {/* <ListItem classes={{ root: classes.root }}>
                                 <Button>
                                     <NavLink to="/Interest" style={navLinkStyle}>
                                         Interest
                                     </NavLink>
                                 </Button>
-                            </ListItem>
+                            </ListItem> */}
                         </List>
                     </Drawer>
 
