@@ -62,7 +62,7 @@ class Navbar extends Component {
                         <Divider />
                         <List>
                             <ListItem>
-                                <NavLink to="/" style={{ textDecoration: 'none' }}>
+                                <NavLink to="/Portfolio/" style={{ textDecoration: 'none' }}>
                                     <IconButton aria-label="home">
                                         <img src={profilepic} style={mystyle} alt="Francis Nguyen Icon" />
                                     </IconButton>
@@ -71,7 +71,7 @@ class Navbar extends Component {
 
                             <ListItem classes={{ root: classes.root }}>
                                 <Button>
-                                    <NavLink to="/Education" style={navLinkStyle}>
+                                    <NavLink to="/Portfolio/Education" style={navLinkStyle}>
                                         Education
                                     </NavLink>
                                 </Button>
@@ -79,7 +79,7 @@ class Navbar extends Component {
 
                             <ListItem classes={{ root: classes.root }}>
                                 <Button>
-                                    <NavLink to="/Experience" style={navLinkStyle}>
+                                    <NavLink to="/Portfolio/Experience" style={navLinkStyle}>
                                         Experience
                                     </NavLink>
                                 </Button>
@@ -87,7 +87,7 @@ class Navbar extends Component {
 
                             <ListItem classes={{ root: classes.root }}>
                                 <Button>
-                                    <NavLink to="/Projects" style={navLinkStyle}>
+                                    <NavLink to="/Portfolio/Projects" style={navLinkStyle}>
                                         Projects
                                     </NavLink>
                                 </Button>
@@ -104,31 +104,31 @@ class Navbar extends Component {
                     </Drawer>
 
                     <Switch>
-                        <Route exact path="/">
+                        <Route exact path="/Portfolio/">
                             <div style={mainStyle}>
                                 <Home />
                             </div>
                         </Route>
 
-                        <Route exact path="/Education">
+                        <Route exact path="/Portfolio/Education">
                             <div style={mainStyle}>
                                 <Education />
                             </div>
                         </Route>
 
-                        <Route exact path="/Experience">
+                        <Route exact path="/Portfolio/Experience">
                             <div style={mainStyle}>
                                 <Experience />
                             </div>
                         </Route>
 
-                        <Route exact path="/Projects">
+                        <Route exact path="/Portfolio/Projects">
                             <div style={mainStyle}>
                                 <Projects />
                             </div>
                         </Route>
 
-                        <Route exact path="/Interest">
+                        <Route exact path="/Portfolio/Interest">
                             <div style={mainStyle}>
                                 <Interest />
                             </div>
