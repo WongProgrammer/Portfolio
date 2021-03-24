@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Button, IconButton, ListItem, List, Divider, Drawer } from '@material-ui/core';
-import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
 import Education from '../Pages/Education/Education';
 import Experience from '../Pages/Experience/Experience';
 import Projects from '../Pages/Projects/Projects';
@@ -62,7 +62,7 @@ class Navbar extends Component {
                         <Divider />
                         <List>
                             <ListItem>
-                                <NavLink to="/Portfolio/" style={{ textDecoration: 'none' }}>
+                                <NavLink to="/" style={{ textDecoration: 'none' }}>
                                     <IconButton aria-label="home">
                                         <img src={profilepic} style={mystyle} alt="Francis Nguyen Icon" />
                                     </IconButton>
@@ -71,7 +71,7 @@ class Navbar extends Component {
 
                             <ListItem classes={{ root: classes.root }}>
                                 <Button>
-                                    <NavLink to="/Portfolio/Education" style={navLinkStyle}>
+                                    <NavLink to="/Education" style={navLinkStyle}>
                                         Education
                                     </NavLink>
                                 </Button>
@@ -79,7 +79,7 @@ class Navbar extends Component {
 
                             <ListItem classes={{ root: classes.root }}>
                                 <Button>
-                                    <NavLink to="/Portfolio/Experience" style={navLinkStyle}>
+                                    <NavLink to="/Experience" style={navLinkStyle}>
                                         Experience
                                     </NavLink>
                                 </Button>
@@ -87,7 +87,7 @@ class Navbar extends Component {
 
                             <ListItem classes={{ root: classes.root }}>
                                 <Button>
-                                    <NavLink to="/Portfolio/Projects" style={navLinkStyle}>
+                                    <NavLink to="/Projects" style={navLinkStyle}>
                                         Projects
                                     </NavLink>
                                 </Button>
@@ -104,31 +104,31 @@ class Navbar extends Component {
                     </Drawer>
 
                     <Switch>
-                        <Route exact path="/Portfolio/">
+                        <Route exact path="/">
                             <div style={mainStyle}>
                                 <Home />
                             </div>
                         </Route>
 
-                        <Route exact path="/Portfolio/Education">
+                        <Route exact path="/Education">
                             <div style={mainStyle}>
                                 <Education />
                             </div>
                         </Route>
 
-                        <Route exact path="/Portfolio/Experience">
+                        <Route exact path="/Experience">
                             <div style={mainStyle}>
                                 <Experience />
                             </div>
                         </Route>
 
-                        <Route exact path="/Portfolio/Projects">
+                        <Route exact path="/Projects">
                             <div style={mainStyle}>
                                 <Projects />
                             </div>
                         </Route>
 
-                        <Route exact path="/Portfolio/Interest">
+                        <Route exact path="/Interest">
                             <div style={mainStyle}>
                                 <Interest />
                             </div>

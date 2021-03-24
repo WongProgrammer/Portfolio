@@ -45,7 +45,7 @@ export default class Experience extends Component {
                         style={{ paddingLeft: "5%", paddingRight: "5%" }}
                     >
                         <Grid item>
-                            <Card name="Francis" style={{ maxWidth: 325 }}>
+                            <Card name="Francis" style={{ maxWidth: 325, borderStyle : 'solid' }}>
                                 <CardActionArea onClick={this.archoniaHandler}>
                                     <CardHeader
                                         avatar={<Avatar aria-label="Archonia" src={archonia} />}
@@ -73,7 +73,7 @@ export default class Experience extends Component {
                         </Grid>
 
                         <Grid item>
-                            <Card style={{ maxWidth: 325 }}>
+                            <Card style={{ maxWidth: 325, borderStyle : 'solid' }}>
                                 <CardActionArea onClick={this.cityHandler}>
                                     <CardHeader
                                         avatar={<Avatar aria-label="City of Los Angeles" src={city} />}
@@ -104,7 +104,7 @@ export default class Experience extends Component {
                         </Grid>
 
                         <Grid item>
-                            <Card style={{ maxWidth: 325 }}>
+                            <Card style={{ maxWidth: 325, borderStyle : 'solid' }}>
                                 <CardActionArea onClick={this.countyHandler}>
                                     <CardHeader
                                         avatar={<Avatar aria-label="Los Angeles County Parks and Recreation" src={county} />}

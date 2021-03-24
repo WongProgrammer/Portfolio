@@ -42,7 +42,7 @@ export default class Projects extends Component {
             temp[i].langauge = languages;
         }
         this.setState({ projects: temp });
-        console.log(this.state.projects)
+        // console.log(this.state.projects)
     }
 
     render() {
@@ -52,10 +52,10 @@ export default class Projects extends Component {
 
         // Display all of my projects  
         const displayProjects = this.state.projects.map((project) => {
-            // console.log(project);
+            console.log(project.language);
             return (
                 <Grid item>
-                    <Card style={{ maxWidth: 325, minWidth: 325 }}>
+                    <Card style={{ maxWidth: 325, minWidth: 325,  borderStyle : 'solid'}}>
                         <CardActionArea>
                             <CardHeader
                                 title={project.name}
@@ -65,9 +65,9 @@ export default class Projects extends Component {
                                 <Typography variant="body1">
                                     {project.desc}
                                 </Typography>
-
+                                
                                 <Typography>
-                                   {project.langauge}
+                                   {"Languages: " + project.langauge }
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
